@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"> <img src="image/logo1.jpg" class="logo" width="40px" height="40px" alt=""></a>
+            <div>
+            <ul id="navbar">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="active  " href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><img src="image/shopping_cart.png" width="40px" height="40px" alt=""></a></li>
+            <li><i id="see" class="fa-sharp fa-regular fa-moon fa-lg" onclick="dark()"></i></li>
+            </ul>
+            </div>
+            </section>
+        <div class="cen">
+            <h3>Log in </h3>
+           <form onsubmit="call()" name="form">
+                 <div class="us">
+                    <div class="tex">
+                        <input type="text" name="name" required>
+                        <span></span>
+                    <label >User Name</label><br>
+                    </div>
+                  <div class="tex">
+                    <input type="text" name="pass" required>
+                    <span></span>
+                    <label>Password</label>
+                  </div>
+                 </div>
+            <a href="#"><label class="fb">forget password?</label></a><br>
+            <input type="submit" value="Log in" class="sub"><br>
+          <a href="#">  <label class="sin">Sin up</label></a>
+           </form>
+        </div>
+        <script>
+            function call()
+            {
+                let name=document.form.name.value;
+                let pword=document.form.pass.value;
+                
+        
+                    if(!name.match(/^[A-Za-z]+$/))
+                    {
+                        alert("Enter correct name");
+                    }
+                    if(!pword.match(/^\w{8}$/))
+                    {
+                        alert("Enter correct password");
+                    }
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100; 200; 300;600; 700; 800; 900&display=swap');
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    position: relative;
+    background: linear-gradient(#287bcd,#73c6dd,#a71ae4) ;
+}
+.cen{
+   position: absolute;
+   top:25%;
+   left:35%;
+    background-color: white;
+    width: 400px; 
+}
+.cen h3{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 2pt solid silver;
+}
+.cen form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.us input{
+    border: none;
+    border-bottom: 2pt solid silver;
+    padding:10px;
+}
+form .tex{
+    position: relative;
+    border-bottom: 2pt solid silver;
+    margin: 30px 0;
+}
+.tex input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.tex label{
+    position: absolute;
+    top:50%;
+    left:5px;
+    bottom: 15px;
+    color: silver;
+    font-size: 16px;
+
+}
+.tex span{
+    content: "";
+    position: absolute;
+    top:40px;
+    left: 0;
+    height: 2px;
+    background: #73c6dd;
+}
+.tex input:focus~label,
+.tex input:valid~label{
+    top:-5px;
+    color:#73c6dd;
+}
+.tex input:focus~span::before,
+.tex input:valid~span::before{
+    width: 100%;
+
+}
+.fb{
+    margin:-5px 0 20px 5px;
+    cursor: pointer;
+}
+.sub{
+    width: 100%;
+    margin: 10px 1px 5px 1px;
+    background-color: #287bcd;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 0 5px 0;
+}
+.sin{
+    margin: 0 2px;
+    cursor: pointer;
+}

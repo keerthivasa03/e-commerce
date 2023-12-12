@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cubes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="project.css">
+    <script>
+        function product1(filename) {
+            let keerthi = document.querySelector("#mainimg");
+            keerthi.setAttribute("src", filename);
+            keerthi.style.height="300px";
+            keerthi.style.wigth="800px";
+   
+        }
+        function dark()
+        {
+            document.body.classList.toggle("darkt");
+
+        }
+    </script>
+</head>
+<body>
+    <section id="header">
+    <a href="#"> <img src="image/logo1.jpg" class="logo" width="40px" height="40px" alt=""></a>
+    <div>
+    <ul id="navbar">
+    <li><a  href="index.html">Home</a></li>
+    <li><a class="active" href="shop.html">Shop</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="cart.html"><img src="image/shopping_cart.png" width="40px" height="40px" alt=""></a></li>
+    <li><i id="see" class="fa-sharp fa-regular fa-moon fa-lg" onclick="dark()"></i></li>
+    </ul>
+    </div>
+    </section>
+<section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="image/ram/a1.jpg" width="100%" id="mainimg">
+            <div class="sameproduct"  class="single-pro-image">
+                <img src="image/ram/z1.jpg" alt="" width="100px" name="image/ram/z1.jpg" onclick="product1(getAttribute('name'))">
+                <img src="image/ram/z2.jpg" alt="" width="100px" name="image/ram/z2.jpg" onclick="product1(getAttribute('name'))">
+                <img src="image/ram/z3.jpg" alt="" width="100px" name="image/ram/z3.jpg" onclick="product1(getAttribute('name'))">
+                <img src="image/ram/ram1.png" alt="" width="100px" name="image/ram/ram1.png" onclick="product1(getAttribute('name'))">
+            </div>
+        </div>
+   
+    <div class="single-pro-details">
+        <h6>Home / Ram</h6>
+        <h4>DDR4-3200</h4>
+        <h2>Rs.5999</h2>
+        <input type="number" value="1">
+       <a href="cart.html"> <button class="normal">Add to Cart</button></a>
+        <h4>Product details</h4>
+        <span>RAM is much faster to read from and write to than other types of storage, such as a hard disk drive (HDD) or solid-state drive (SSD). This is because RAM is made up of integrated circuits that can be accessed directly by the processor.</span>
+    </div>
+</section>
+<section>
+   
+</section>
+<section id="product1" class="section-p1">
+    <h2>Featured Product</h2>
+    <p> Collection New Morden Tech</p>
+    <div class="pro-container">
+    <div class="pro">
+    <img src="image/n1.webp" height="250px" alt="">
+    <div class="des">
+    <span>CORSAIR</span>
+    <h5>DDR4-3200</h5>
+    <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    <h4>Rs.5999</h4>
+    </div>
+    <a class="cart " href="#"><i class="fa fa-shopping-cart "></i></a>
+    </div>
+    <div class="pro">
+        <img src="image/n2.jpg" alt="">
+        <div class="des">
+        <span>Micron</span>
+        <h5>DDR5-4800: 16GB</h5>
+        <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        </div>
+        <h4>Rs.8999</h4>
+        </div>
+        <a class="cart " href="#"><i class="fa fa-shopping-cart "></i></a>
+        </div>
+        <div class="pro">
+            <img src="image/n3.webp" alt="">
+            <div class="des">
+            <span>Corsair</span>
+            <h5>Corsair Carbide Series Air 240</h5>
+            <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            
+            </div>
+            <h4>Rs.19999</h4>
+            </div>
+            <a class="cart " href="#"><i class="fa fa-shopping-cart "></i></a>
+            </div>
+            <div class="pro">
+                <img src="image/n4.webp" alt="">
+                <div class="des">
+                <span>Kingston Technology</span>
+                <h5> Lian Li O11 Dynamic Mini</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+                <h4>Rs.25000</h4>
+                </div>
+                <a class="cart " href="#"><i class="fa fa-shopping-cart "></i></a>
+                </div>
+               
+    </div>
+    </section>
+    <section id="newsletter"  class="section-p1 ">
+        <div class="section-m1"><div class="newstext">
+            <h4>Sign up For Newsletters</h4>
+            <p>Get E-mail update about our latest shop and <span>special offers</span>special offers.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div></div>
+    </section>    
+    <footer class="section-p1">
+<div class="col">
+        <img class="icon" src="image/logo1.jpg" width="20" height="20">
+        <h4>contect</h4>
+        <p>Address: <strong></strong>562 wellington Road,street 32, San Francisco</p>
+        <p><strong>Phone:</strong>(+91) 9345384147</p>
+        <p><strong>Hours:</strong>10:00-18:00,Mon-sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+</div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery Imformation</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact Us</a>
+</div>
+<div class="col">
+    <h4>My account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        
+        <img src="image/g.jpg" width="200px" alt="">
+    </div>
+    <p>From App Store or Google Play</p>
+    <img src="image/pay.png" alt="">
+</div>
+<div class="copyright">
+    <p>0 2022, tech2 etc-html css Ecommerce Template</p>
+</div>
+    </footer>
+
+    </body>
+</html>
